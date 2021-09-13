@@ -29,6 +29,11 @@ body {
   background-color: rgb(255, 255, 255);
   box-shadow: 10px 10px 30px  rgb(223, 219, 219);
 }
+
+.product-image {
+  width: 150px;
+  height: 170px;
+}
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -46,7 +51,7 @@ body {
 .single-product:hover {
   box-shadow: 10px 10px 30px rgb(208, 208, 209);
   border-radius: 10px;
-  background-color: rgb(214, 235, 255);
+  background-color: rgb(227, 233, 238);
 }
 .product-image {
   width: 150px;

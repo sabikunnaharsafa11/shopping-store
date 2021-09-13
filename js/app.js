@@ -16,13 +16,13 @@ const showProducts = (products) => {
     const div = document.createElement("div");
     div.classList.add("product");
     div.innerHTML = `<div class="single-product  m-2 card-item rounded">
-      <div>
+      <div style="width: 100%; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: white;">
     <img class="product-image" src=${image}></img>
       </div>
-      <h4>${product.title}</h4>
+      <h4 style="font-weight: bold;">${product.title}</h4>
       <p>Category: ${product.category}</p>
-      <h4>Price: $ ${product.price}</h4>
-      <h6 class="text-danger"> Rating: ${product.rating.rate}   , Count: ${product.rating.count}</h6>
+      <h4 style="color: #FF8A65; font-weight: bold;">Price: $${product.price}</h4>
+      <h6 style="font-weight: bold;"> <i class="fas fa-star" style="color: #F9A825;"></i> ${product.rating.rate}  &nbsp &nbsp <i class="fas fa-users" style="color: #2979FF;"></i> ${product.rating.count}</h6>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-primary">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
       `;
